@@ -1,0 +1,4 @@
+Feladat felosztás:
+Ottó: topologia megcsinalasa, Pert router , S1, Szerver 1 perth konfig
+pati: Alapkonfig megirasa; Singapore router és S3 szerver server 4 Singapore konfig
+Ákos: alhálozat szamitasa, Kl Syndey és S2 és szerver 2(KL) és 3(Syndey) konfig

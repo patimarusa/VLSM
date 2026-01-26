@@ -1,0 +1,45 @@
+ena
+clock set 0:00:00 21 Jan 2026
+conf t
+hostname KL
+security passwords min-lenght 8
+login block-for 60 att 3 with 120
+ena sec class123
+line console 0
+pass cisco123
+login
+logging syn
+exec 5
+exit
+line vty 0 15
+pass cisco123
+login
+exec 5
+exit
+service password-encryption
+banner motd "Privat halozat!"
+int se0/1/0
+ip add 192.168.10.129? 255.255.255.252
+desc Router_Perth fele
+no sh
+exit
+int se0/1/1
+ip add 192.168.10.133 255.255.255.252
+desc Router_Sydney fele
+no sh
+exit
+int se0/2/0
+ip add 192.168.10.137 255.255.255.192
+desc Router_Singapore fele
+no sh
+exit
+ip domain-name gyak.hu
+ip ssh ver 2
+cry key gen rsa
+4096
+username admin_KL privileg 15 secret QWasdf/789
+line vty 0 15
+login local
+transport input ssh
+end
+copy ru st
